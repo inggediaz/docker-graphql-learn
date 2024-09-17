@@ -28,10 +28,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t gediazcx/docker-graphq:0.0.2 .
+        docker build -t gediazcx/docker-graphq .
 
     - name: Push Docker Image
       run: |
         docker push gediazcx/docker-graphq:0.0.2
+        docker push gediazcx/docker-graphq
         
 
     
